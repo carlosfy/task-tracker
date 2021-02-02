@@ -74,11 +74,11 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename='/task-tracker'>
       <div className="container">
         <Header onButton={toggleShow} open={showAddTask} />
 
-        <Route path='/' exact render={(props) => (
+        <Route path='/task-tracker' exact render={(props) => (
           <>
             {showAddTask && <AddTask onAdd={addTask} />}
             {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} /> : 'No tasks to show'}
