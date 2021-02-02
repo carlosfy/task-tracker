@@ -74,7 +74,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/task-tracker'>
       <div className="container">
         <Header onButton={toggleShow} open={showAddTask} />
 

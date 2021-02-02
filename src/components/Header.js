@@ -13,7 +13,7 @@ const Header = ({ title, onButton, open }) => {
 }
 
 Header.defaultProps = {
-    title: "Tast Tracker"
+    title: "Task Tracker"
 }
 
 Header.propTypes = {
